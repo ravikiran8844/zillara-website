@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -119,34 +119,132 @@
 
 
     <section class="home-main-carousel">
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
-        centered-slides="false" >
-        <swiper-slide>
-            <picture>
-                <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
-                <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
-              </picture>
-        </swiper-slide>
-        <swiper-slide>
-            <picture>
-                <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
-                <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
-              </picture>
-        </swiper-slide>
-        <swiper-slide>
-            <picture>
-                <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
-                <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
-              </picture>
-        </swiper-slide>
-      </swiper-container>
+
+        <div class="swiper mySwiper homeMainSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
+                    <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
+                  </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
+                    <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
+                  </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/home/main-banner-1.webp">
+                    <img src="assets/images/home/main-banner-mobile-1.webp" alt="main banner">
+                  </picture>
+              </div>
+             
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </div>
+
+
+
     </section>
 
 
 
 
+    <section>
+        <div class="container py-5">
+            <div class="col-12 mb-5">
+                <div class="fs-1 fw-bold text-center">Shop By Category</div>
+            </div>
+
+
+
+            <div class="swiper mySwiper categorySlider">
+                <div class="swiper-wrapper pb-5">
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/rings.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Rings</div>
+                            
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Rings</a></div>
+                    </div>
+                  </div>
+                 
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/Necklaces.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Necklaces</div>
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Necklaces</a></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/Earrings.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Earrings</div>
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Earrings</a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/Bracelets.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Bracelets</div>
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Bracelets</a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/Anklets.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Anklets</div>
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Anklets</a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <div class="text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <img width="253" height="316" class="img-fluid rounded-3" src="assets/images/category-slider/Couple-Rings.png" alt="">
+                            </div>
+                            <div class="fs-4 mt-3">Couple Rings</div>
+                            <div class="fs-5"><a class="text-dark" href="#">Shop Couple Rings</a></div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+
     <section class="home-banner-section">
-        <div class="py-5">
+        <div class="pb-5">
             <picture>
                 <source media="(min-width:768px)" srcset="assets/images/home/banner-section-desktop-image.webp">
                 <img src="assets/images/home/banner-section-mobile-image.webp" alt="main banner">
@@ -156,6 +254,70 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".categorySlider", {
+        slidesPerView: 1.5,
+      spaceBetween: 10,
+       scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        hide: false,
+      },
+      breakpoints: {
+        460: {
+          slidesPerView: 2.3,
+          spaceBetween: 10,
+        },
+        740: {
+          slidesPerView: 3.3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4.3,
+          spaceBetween: 30,
+        },
+        1240: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".homeMainSlider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
