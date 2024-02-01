@@ -60,6 +60,15 @@ swiper-container {
 
 /* header */
 
+@media (min-width: 768px) {  
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        top: 95%; 
+    }
+  }  
 
 
 .menu-links-with-icon{
@@ -133,4 +142,11 @@ swiper-container {
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
+  }
+
+
+
+  /* icons-with-text-slider */
+  .icons-with-text-slider{
+    color: #fff;
   }
