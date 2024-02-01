@@ -6,21 +6,119 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Document</title>
 </head>
 <body>
 
-    <header class="bg-dark">
-        <div class="container py-2">
-            <div class="text-white text-center">
+    <div class="bg-dark announcment-bar">
+        <div class="py-2">
+            <div class="text-white text-center announcment-bar__text">
                 50% OFF on Making Charges on Silver Jewellery!
             </div>
         </div>
-    </header>
+    </div>
+
+  <header class="sticky-top bg-white">
+  
+    <nav class="navbar">
+        <div class="container flex-nowrap">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.png" alt="Logo" width="160" height="35" class="img-fluid" />
+          </a>
 
 
-    <section>
+
+          <div>
+            <ul class="menu-links-with-icon list-unstyled d-flex gap-2 gap-lg-3 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column gap-1 align-items-center" href="">
+                        <img src="/assets/images/icons/stores.png" width="24" height="24" alt="cart" />
+                        <span class="d-none d-lg-block">STORES</span>
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column  gap-1 align-items-center" href="">
+                        <img src="/assets/images/icons/account.png" width="24" height="24" alt="cart" />
+                        <span class="d-none d-lg-block">ACCOUNT</span>
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column gap-1 align-items-center" href="">
+                        <img src="/assets/images/icons/wishlist.png" width="24" height="24" alt="cart" />
+                        <span class="d-none d-lg-block">WHISLIST</span>
+                        
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column gap-1 align-items-center" href="">
+                        <img src="/assets/images/icons/cart.png" width="24" height="24" alt="cart" />
+                        <span class="d-none d-lg-block">CART</span>
+                    </a>
+                </li>
+                
+
+            </ul>
+
+          </div>
+        </div>
+
+        
+
+    </nav>
+
+    <div class="d-none d-md-block">
+        <ul class="header-menu-links-lg-screen list-unstyled mb-0 py-3 d-flex justify-content-center align-items-center gap-4">
+            <li class="nav-item">
+                <a class="nav-link" href="">Rings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Earrings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Necklace</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Bracelets</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gifting
+                </a>
+                <ul class="dropdown-menu" data-bs-popper="static">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Collections
+                </a>
+                <ul class="dropdown-menu" data-bs-popper="static">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu" data-bs-popper="static">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+        </ul>
+    </div>
+   
+
+
+  </header>
+
+
+    <section class="home-main-carousel">
         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
         centered-slides="false" >
         <swiper-slide>
@@ -43,6 +141,21 @@
         </swiper-slide>
       </swiper-container>
     </section>
+
+
+
+
+    <section class="home-banner-section">
+        <div class="py-5">
+            <picture>
+                <source media="(min-width:768px)" srcset="assets/images/home/banner-section-desktop-image.webp">
+                <img src="assets/images/home/banner-section-mobile-image.webp" alt="main banner">
+              </picture>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
