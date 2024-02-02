@@ -59,7 +59,29 @@ swiper-container {
 
 
 /* header */
+.nav-search-input{
+    max-width: 360px;
+    border-radius: 8px;
+    background: #F6F6F6 !important;
+    margin: auto;
+}
+.nav-search-input input::placeholder{
+    color: #B8B8B8;
+    font-size: 16px;
+}
+.nav-search-input input{
+    border: none;
+    outline: none;
+    background-color: #F6F6F6 !important;
+    box-shadow: none !important;
+    color: #B8B8B8;
+    font-size: 16px;
 
+}
+.nav-search-input svg{
+    height: 20px;
+    width: 20px;
+}
 @media (min-width: 768px) {  
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -149,4 +171,27 @@ swiper-container {
   /* icons-with-text-slider */
   .icons-with-text-slider{
     color: #fff;
+  }
+
+
+
+
+
+
+  /* home-video-section */
+  .home-video-section video{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+
+
+  /* home topSellingProducts */
+
+  .topSellingProducts .swiper-slide img{
+        aspect-ratio: 1;
+        object-fit: contain;
   }
