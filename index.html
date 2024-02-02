@@ -24,9 +24,16 @@
 
         <nav class="navbar">
             <div class="container-xxl flex-nowrap">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/images/logo.png" alt="Logo" width="160" height="35" class="img-fluid" />
-                </a>
+
+
+               <div class="d-flex align-items-center gap-1">
+                <button class="btn d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <a class="navbar-brand" href="#">
+                     <img src="/assets/images/logo.png" alt="Logo" width="159" height="34" class="img-fluid" />
+                 </a>
+               </div>
 
 
                 <div class="flex-grow-1 d-none d-md-block">
@@ -89,7 +96,7 @@
                                 <img src="/assets/images/icons/cart.png" width="24" height="24" alt="cart" />
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                                    99+
+                                    99
                                 </span>
                                 <span class="d-none d-lg-block">CART</span>
                             </a>
@@ -188,6 +195,68 @@
                 </ul>
             </div>
         </div>
+
+
+
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <div>
+                <img src="/assets/images/logo.png" alt="Logo" width="159" height="34" class="img-fluid" />
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <ul
+                class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Rings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Earrings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Necklace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Bracelets</a>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gifting
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
 
 
 
@@ -1180,6 +1249,28 @@
             posterImage.addEventListener('click', togglePlay);
         });
     </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdownToggle = document.querySelectorAll('.nav-item.dropdown');
+
+        for (var i = 0; i < dropdownToggle.length; i++) {
+            dropdownToggle[i].addEventListener('mouseenter', function() {
+                this.classList.add('show');
+                var dropdownMenu = this.querySelector('.dropdown-menu');
+                dropdownMenu.style.display = 'block';
+            });
+
+            dropdownToggle[i].addEventListener('mouseleave', function() {
+                this.classList.remove('show');
+                var dropdownMenu = this.querySelector('.dropdown-menu');
+                dropdownMenu.style.display = 'none';
+            });
+        }
+
+    });
+</script>
 
 </body>
 

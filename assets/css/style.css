@@ -83,10 +83,14 @@ swiper-container {
     height: 20px;
     width: 20px;
 }
+header .nav-link img{
+    width: 20px;
+    height: 20px;
+}
 @media (min-width: 768px) {  
-    .dropdown:hover .dropdown-menu {
+    /* .dropdown:hover .dropdown-menu {
         display: block;
-    }
+    } */
     .dropdown:hover .dropdown-menu {
         display: block;
         top: 95%; 
