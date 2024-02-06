@@ -1,8 +1,44 @@
-$dark:#2D2D2D;
-$secondary:#5D5D5D;
-$success:#21C327;       
-$info:#686868;          
-$danger:#A32C31;
+$dark: #2D2D2D;
+$secondary: #5D5D5D;
+$success: #21C327;
+$info: #686868;
+$danger: #A32C31;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1920px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: calc(92%), // Adjusted for an 80px reduction
+  xxxl: 1840px
+);
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+// Override Bootstrap's default container max-width to include xxl breakpoint
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl,
+.container-xxxl {
+  max-width: 100%;
+}
+  
 
 
 @import "node_modules/bootstrap/scss/bootstrap";

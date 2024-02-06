@@ -20,6 +20,8 @@
 body{
     font-family: Optima;
     background-color: #F6F6F6;
+    max-width: 1920px;
+    margin: auto;
 }
 .font-secondary{
     font-family: Cotta;
@@ -240,7 +242,9 @@ header .nav-link img{
 
 
 
-
+.categorySlider  img{
+    width: 100%;
+}
 
 
   /* home-collections-grid-section */
@@ -252,6 +256,10 @@ header .nav-link img{
   }
   .home-collections-grid-items-section2{
     display: none
+  }
+
+  .home-collections-grid-items-section1 img,.home-collections-grid-items-section2 img{
+    width: 100%;
   }
   @media (min-width:992px) {
     .home-collections-grid-items-section1{
