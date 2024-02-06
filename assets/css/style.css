@@ -293,6 +293,25 @@ header .nav-link img{
 
 
 
+/* shop-this-look-section */
+
+
+.shop-this-look-section{
+  background: linear-gradient(to bottom, white 50%, black 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .nav-tabs{
@@ -325,3 +344,9 @@ header .nav-link img{
 .reviewsSlider img{
 aspect-ratio: 1;
 }
+
+.reviewsSlider .card{
+    border: none;
+    border-radius: 18px;
+}
+   
