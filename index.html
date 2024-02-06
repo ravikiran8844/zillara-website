@@ -71,7 +71,7 @@
 
 
                 <div>
-                    <ul class="menu-links-with-icon list-unstyled d-flex gap-1 gap-lg-3 mb-0">
+                    <ul class="menu-links-with-icon list-unstyled d-flex gap-1 gap-lg-4 mb-0">
                         <li class="nav-item">
                             <a class="nav-link d-flex flex-column gap-1 align-items-center" href="">
                                 <img src="/assets/images/icons/stores.png" width="24" height="24" alt="cart" />
@@ -2975,26 +2975,26 @@
     </script>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var dropdownToggle = document.querySelectorAll('.nav-item.dropdown');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownToggle = document.querySelectorAll('.nav-item.dropdown');
 
-        for (var i = 0; i < dropdownToggle.length; i++) {
-            dropdownToggle[i].addEventListener('mouseenter', function() {
-                this.classList.add('show');
-                var dropdownMenu = this.querySelector('.dropdown-menu');
-                dropdownMenu.style.display = 'block';
-            });
+            for (var i = 0; i < dropdownToggle.length; i++) {
+                dropdownToggle[i].addEventListener('mouseenter', function() {
+                    this.classList.add('show');
+                    var dropdownMenu = this.querySelector('.dropdown-menu');
+                    dropdownMenu.style.display = 'block';
+                });
 
-            dropdownToggle[i].addEventListener('mouseleave', function() {
-                this.classList.remove('show');
-                var dropdownMenu = this.querySelector('.dropdown-menu');
-                dropdownMenu.style.display = 'none';
-            });
-        }
+                dropdownToggle[i].addEventListener('mouseleave', function() {
+                    this.classList.remove('show');
+                    var dropdownMenu = this.querySelector('.dropdown-menu');
+                    dropdownMenu.style.display = 'none';
+                });
+            }
 
-    });
-</script>
+        });
+    </script>
 
 
 
