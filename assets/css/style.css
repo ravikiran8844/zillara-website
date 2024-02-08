@@ -27,6 +27,12 @@ body{
 .font-secondary{
     font-family: Cotta;
 }
+
+@media (max-width:768px) {
+  .btn{
+    font-size: 14px;
+  }
+}
 picture img{
     width: 100%;
     height: auto;
@@ -387,6 +393,7 @@ header .nav-link img{
     border: none;
     color: #282828;
     font-weight: 500;
+    padding: 0px 10px;
 }
 .multi-tabs-section .nav-tabs .nav-link.active,.multi-tabs-section  .nav-tabs .nav-item.show .nav-link{
     background-color: transparent;
@@ -526,3 +533,84 @@ aspect-ratio: 1;
     }
   }
   
+
+
+
+
+
+
+  /* frequently-bought-together */
+
+  .frequently-bought-together img{
+    aspect-ratio: 1;
+  }
+
+  .frequently-bought-together_img-wrapper{
+    background: #F5F5F5;
+  }
+
+
+  .frequently-bought-together input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    /* accent-color:#1FAE25; */
+  }
+
+
+  .frequently-bought-together_border{
+    border-bottom: 1px solid #BCBCBC;
+  }
+@media (min-width:992px) {
+  .frequently-bought-together_border{
+    padding: 0px;
+    border-bottom: none;
+    border-right: 1px solid #BCBCBC;
+  }
+}
+
+
+
+/* youMayAlsoLike */
+.youMayAlsoLike img{
+  aspect-ratio: 1;
+}
+
+
+/* faq section */
+.accordion-item,.accordion-button{
+ background-color: transparent !important;
+}
+.accordion-item{
+  border-color: #C1C1C1 !important;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.accordion-button::after{
+  background-size:16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");}
+.accordion-button:not(.collapsed)::after{
+  background-size:16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+
+.accordion-button{
+  font-family: Canela Trial !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-left: 0px;
+
+}
+.accordion-body{
+  padding-left: 0px;
+}
