@@ -255,7 +255,7 @@ header .nav-link img {
 
 .topSellingProducts .swiper-slide img {
   aspect-ratio: 1;
-  object-fit: contain;
+  object-fit: none;
 }
 
 
@@ -621,6 +621,7 @@ header .nav-link img {
 /* youMayAlsoLike */
 .youMayAlsoLike img {
   aspect-ratio: 1;
+  object-fit: none;
 }
 
 
@@ -656,13 +657,25 @@ header .nav-link img {
 
 .accordion-button {
   font-family: Canela Trial !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 30px;
   letter-spacing: 0.03em;
   text-align: left;
   padding-left: 0px;
 
+}
+@media (min-width:768px){
+  .accordion-button {
+    font-family: Canela Trial !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-left: 0px;
+  
+  }
 }
 
 .accordion-body {
@@ -783,4 +796,52 @@ background: rgb(255, 255, 255) !important;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
+}
+
+.main-product__content .accordion-item{
+  border: none !important;
+  border-bottom: 1px solid rgb(188, 188, 188) !important;
+  border-radius: 0px !important;
+}
+.main-product__content .accordion-item:first-child{
+  border-top: 1px solid rgb(188, 188, 188) !important;
+
+}
+
+.product-details-card-grid-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0px, 120px));
+  gap: 10px;
+}
+.product-details-card-grid-items .card{
+  padding: 10px 5px;
+  text-align: center;
+}
+
+
+
+.offers-slider .swiper-slide{
+  width: 200px;
+}
+
+.offers-slider .swiper-button-next,.offers-slider  .swiper-button-prev{
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+.offers-slider .swiper-wrapper{
+  padding-left:30px;
+} */
+
+.offers-slider .swiper-button-prev, .swiper-rtl .swiper-button-next {
+left: 15px;
+}
+.offers-slider .card{
+  border: none;
+  border-left: 3px solid rgb(81, 81, 81);
+border-radius: 14px;
+
+box-shadow: 0px 0px 14px 0px rgba(206, 206, 206, 0.25);
+background: rgb(255, 255, 255);
 }
