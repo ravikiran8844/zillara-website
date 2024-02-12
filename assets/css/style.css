@@ -962,6 +962,11 @@ box-shadow: none !important;
   gap: 10px;
 }
 
+.paginate-pagination{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .paginate-pagination ul li{
   border: 0.8px solid rgb(202, 202, 202);
