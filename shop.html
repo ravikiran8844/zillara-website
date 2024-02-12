@@ -274,26 +274,27 @@
 
         <section>
             <div class="d-none d-lg-block">
-            <div class="row g-0" style="border-bottom: 1px solid #C7C7C7;">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <div>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Jewellery</li>
-                            </ol>
-                        </nav>
+                <div class="row g-0" style="border-bottom: 1px solid #C7C7C7;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Jewellery</li>
+                                </ol>
+                            </nav>
 
-                        <div class="fs-3 fw-bold mt-2">RINGS</div>
+                            <div class="fs-3 fw-bold mt-2">RINGS</div>
 
-                        <div class="mt-2 fs-6">Count to five. Rings for every finger.</div>
+                            <div class="mt-2 fs-6">Count to five. Rings for every finger.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <img class="img-fluid w-100" height="338" width="1222" src="assets/images/shop-banner.png"
+                            alt="">
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <img class="img-fluid w-100" height="338" width="1222" src="assets/images/shop-banner.png" alt="">
-                </div>
-            </div>
             </div>
         </section>
 
@@ -301,77 +302,278 @@
 
 
         <section>
-            <div class="container py-5">
+            <div class="container pb-5 pt-3  py-lg-5">
                 <div class="row">
+
                     <div class="d-none d-lg-block col-lg-4 col-xl-3">
                         <div>
                             <div class="fs-6 fw-bold">SEARCH INVENTORY</div>
 
                             <div class="mt-2 d-flex justify-content-between flex-wrap align-items-center">
                                 <div class="fs-4 fw-bold">FILTER</div>
-                            <div>
-                                <button class="btn btn-white">Clear filters</button>
-                            </div>
+                                <div>
+                                    <button class="btn btn-white" id="sidebar-clear-filters">Clear filters</button>
+                                </div>
                             </div>
                         </div>
+
+
+                        <div class="sidebar-filters">
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Category</div>
+
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div>
+                                        <input id="category-pendants" type="checkbox">
+                                        <label for="category-pendants">Pendants</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="category-earings" type="checkbox">
+                                        <label for="category-earings">Earings</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="category-bracelets" type="checkbox">
+                                        <label for="category-bracelets">Bracelets</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Style</div>
+
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div>
+                                        <input id="style-office" type="checkbox">
+                                        <label for="style-office">Office</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="style-party" type="checkbox">
+                                        <label for="style-party">Party</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="style-wedding" type="checkbox">
+                                        <label for="style-wedding">Wedding</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-dark w-100 mt-3">All</button>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Gemstone</div>
+
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div>
+                                        <input id="Gemstone-Birthstones" type="checkbox">
+                                        <label for="Gemstone-Birthstones">Birthstones</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Gemstone-Sapphires" type="checkbox">
+                                        <label for="Gemstone-Sapphires">Sapphires</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Gemstone-Pearls" type="checkbox">
+                                        <label for="Gemstone-Pearls">Pearls</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Gemstone-Opals" type="checkbox">
+                                        <label for="Gemstone-Opals">Opals</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Gemstone-No-Gems" type="checkbox">
+                                        <label for="Gemstone-No-Gems">No Gems</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Gemstone-wedding" type="checkbox">
+                                        <label for="Gemstone-All">All</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Weight Ranges</div>
+
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div>
+                                        <input id="Weight-Ranges-0-2" type="checkbox">
+                                        <label for="Weight-Ranges-0-2">0-2 g (608)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Weight-Ranges-0-5" type="checkbox">
+                                        <label for="Weight-Ranges-0-5">0-5 g (930)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Weight-Ranges-5-10" type="checkbox">
+                                        <label for="Weight-Ranges-5-10">5-10 g (222)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Weight-Ranges-10-20" type="checkbox">
+                                        <label for="Weight-Ranges-10-20">10-20 g (47)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Weight-Ranges-20-30" type="checkbox">
+                                        <label for="Weight-Ranges-20-30">20-30 g (9)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Weight-Ranges-30" type="checkbox">
+                                        <label for="Weight-Ranges-30">>30 g (2)</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Ring Size</div>
+
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div>
+                                        <input id="Ring-size-5" type="checkbox">
+                                        <label for="Ring-size-5">5 (17)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Ring-size-6" type="checkbox">
+                                        <label for="Ring-size-6">6 (182)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Ring-size-7" type="checkbox">
+                                        <label for="Ring-size-7">7 (260)</label>
+                                    </div>
+
+                                    <div>
+                                        <input id="Ring-size-8" type="checkbox">
+                                        <label for="Ring-size-8">8 (305)</label>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-dark w-100 mt-3">All</button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
                     </div>
+
+
                     <div class="col-12 col-lg-8 col-xl-9">
 
                         <div class="d-none d-lg-block mb-3">
                             <div class="d-flex gap-2 align-items-center justify-content-end ">
                                 <div class="d-flex gap-2 align-items-center">
-                                    <label for="">Sort By</label>
-                                    <select class="" style="box-shadow: none;" name="" id="sort-by-options">
+                                    <label for="" style="width: 80px;text-align: center;">Sort By</label>
+                                    <select class="form-select" style="box-shadow: none;" name="" id="sort-by-options">
                                         <option value="">All</option>
+                                        <option value="">Price - Low to High</option>
+                                        <option value="">Price - High to Low</option>
                                     </select>
                                 </div>
-    
+
                                 <div class="d-flex align-items-center gap-2">
                                     <button class="btn border-0 p-0">
-                                        <svg width="24" height="24" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                         
-                                            <defs/>
-                                            <rect id="Rectangle 9993" rx="1.000000" width="16.000000" height="13.000000" fill="#2D2D2D" fill-opacity="1.000000"/>
-                                            <rect id="Rectangle 9995" y="15.000000" rx="1.000000" width="16.000000" height="13.000000" fill="#2D2D2D" fill-opacity="1.000000"/>
-                                            <rect id="Rectangle 9994" x="18.000000" rx="1.000000" width="16.000000" height="13.000000" fill="#2D2D2D" fill-opacity="1.000000"/>
-                                            <rect id="Rectangle 9996" x="18.000000" y="15.000000" rx="1.000000" width="16.000000" height="13.000000" fill="#2D2D2D" fill-opacity="1.000000"/>
+                                        <svg width="24" height="24" viewBox="0 0 34 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <defs />
+                                            <rect id="Rectangle 9993" rx="1.000000" width="16.000000" height="13.000000"
+                                                fill="#2D2D2D" fill-opacity="1.000000" />
+                                            <rect id="Rectangle 9995" y="15.000000" rx="1.000000" width="16.000000"
+                                                height="13.000000" fill="#2D2D2D" fill-opacity="1.000000" />
+                                            <rect id="Rectangle 9994" x="18.000000" rx="1.000000" width="16.000000"
+                                                height="13.000000" fill="#2D2D2D" fill-opacity="1.000000" />
+                                            <rect id="Rectangle 9996" x="18.000000" y="15.000000" rx="1.000000"
+                                                width="16.000000" height="13.000000" fill="#2D2D2D"
+                                                fill-opacity="1.000000" />
                                         </svg>
-                                        
+
                                     </button>
-                                    <button class="btn border-0 p-0">
-                                        <svg width="24" height="24" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            
-                                            <defs/>
-                                            <rect id="Rectangle 9997" x="1.000000" y="1.000000" rx="1.000000" width="32.000000" height="28.000000" stroke="#949494" stroke-opacity="1.000000" stroke-width="2.000000"/>
-                                            <rect id="Rectangle 9999" x="1.000000" y="11.000000" rx="1.000000" width="32.000000" height="18.000000" stroke="#949494" stroke-opacity="1.000000" stroke-width="2.000000"/>
-                                            <rect id="Rectangle 10000" x="1.000000" y="20.000000" rx="1.000000" width="32.000000" height="9.000000" stroke="#949494" stroke-opacity="1.000000" stroke-width="2.000000"/>
-                                            <rect id="Rectangle 9998" x="12.000000" y="1.000000" rx="1.000000" width="21.000000" height="28.000000" stroke="#949494" stroke-opacity="1.000000" stroke-width="2.000000"/>
+                                    <!-- <button class="btn border-0 p-0">
+                                        <svg width="24" height="24" viewBox="0 0 34 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <defs />
+                                            <rect id="Rectangle 9997" x="1.000000" y="1.000000" rx="1.000000"
+                                                width="32.000000" height="28.000000" stroke="#949494"
+                                                stroke-opacity="1.000000" stroke-width="2.000000" />
+                                            <rect id="Rectangle 9999" x="1.000000" y="11.000000" rx="1.000000"
+                                                width="32.000000" height="18.000000" stroke="#949494"
+                                                stroke-opacity="1.000000" stroke-width="2.000000" />
+                                            <rect id="Rectangle 10000" x="1.000000" y="20.000000" rx="1.000000"
+                                                width="32.000000" height="9.000000" stroke="#949494"
+                                                stroke-opacity="1.000000" stroke-width="2.000000" />
+                                            <rect id="Rectangle 9998" x="12.000000" y="1.000000" rx="1.000000"
+                                                width="21.000000" height="28.000000" stroke="#949494"
+                                                stroke-opacity="1.000000" stroke-width="2.000000" />
                                         </svg>
-                                        
-                                        
-                                    </button>
+
+
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
 
-                        <div class="shop-page-products">
 
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
+                        <div class="d-block d-lg-none mb-3">
+                            <div class="d-flex align-items-center  justify-content-between gap-3">
+                                <div class="fs-5 fw-bold">Jewellery</div>
+                                <div class="fs-6 fw-medium text-secondary">962 Designs</div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="shop-page-products grid">
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
                                             href="product.html">Silver Necklace</a></div>
 
-
-
-                                </div>
-
-                                <div class="mt-2">
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -435,267 +637,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
 
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Miracle Necklace</a></div>
-
-
-
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
                                 </div>
+
 
                                 <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
 
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Rings</a></div>
-
-
-
-                                </div>
-
-                                <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
-
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Rings</a></div>
-
-
-
-                                </div>
-
-                                <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
-
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
                                             href="product.html">Silver Necklace</a></div>
 
-
-
-                                </div>
-
-                                <div class="mt-2">
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -759,266 +715,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
 
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Miracle Necklace</a></div>
-
-
-
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
                                 </div>
+
 
                                 <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
 
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Rings</a></div>
-
-
-
-                                </div>
-
-                                <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
-
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Rings</a></div>
-
-
-
-                                </div>
-
-                                <div class="mt-2">
-                                    <div
-                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
-                                        <div>
-                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
-                                                    fill="#FFAA00"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
-                                                    fill="#FFBD38"></path>
-                                            </svg>
-
-
-                                        </div>
-                                        <div>
-                                            2374 reviews
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex flex-wrap justify-content-center gap-2">
-                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
-                                        <div class="fs-6 fs-md-5 text-secondary ">
-                                            <s>₹ 2,397.00</s>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
                                             href="product.html">Silver Necklace</a></div>
 
-
-
-                                </div>
-
-                                <div class="mt-2">
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -1082,24 +793,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
 
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Miracle Necklace</a></div>
-
-
-
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
                                 </div>
 
+
                                 <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -1163,24 +871,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
 
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Rings</a></div>
-
-
-
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
                                 </div>
 
+
                                 <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -1244,24 +949,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
 
-
-                            <div class="shop-page-product text-center d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="bg-white">
-                                        <a href="product.html">
-                                            <img width="300" height="300" class="img-fluid rounded-3"
-                                                src="assets/images/products/product2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="fs-6 fs-md-5 fw-bold mt-2"><a class="text-dark text-decoration-none"
-                                            href="product.html">Silver Miracle Rings</a></div>
-
-
-
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
                                 </div>
 
+
                                 <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
                                     <div
                                         class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
                                         <div>
@@ -1325,8 +1027,474 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
 
 
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-product text-center">
+
+                                <div class="bg-white">
+                                    <a href="product.html">
+                                        <img width="300" height="300" class="img-fluid rounded-3"
+                                            src="assets/images/products/product1.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2">
+
+                                    <div class="fs-6 fs-md-5 fw-bold"><a class="text-dark text-decoration-none"
+                                            href="product.html">Silver Necklace</a></div>
+
+                                    <div
+                                        class="fs-6 fs-md-5 text-secondary mb-1 d-flex flex-wrap justify-content-center gap-2">
+                                        <div>
+                                            <svg width="72" height="15" viewBox="0 0 99 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.95345 0L11.4301 6.07118L17.9067 6.57646L12.9608 10.8339L14.4868 17.2174L8.95345 13.7774L3.41988 17.2174L4.94592 10.8339L0 6.57646L6.47658 6.07118L8.95345 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.9541 0L11.4308 6.07118L17.9074 6.57646L12.9615 10.8339L14.4875 17.2174L8.9541 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2267 0L31.7036 6.07118L38.1802 6.57646L33.2342 10.8339L34.7603 17.2174L29.2267 13.7774L23.6933 17.2174L25.2194 10.8339L20.2734 6.57646L26.75 6.07118L29.2267 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M29.2266 0L31.7034 6.07118L38.18 6.57646L33.2341 10.8339L34.7601 17.2174L29.2266 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5001 0L51.977 6.07118L58.4536 6.57646L53.5077 10.8339L55.0337 17.2174L49.5001 13.7774L43.9668 17.2174L45.4928 10.8339L40.5469 6.57646L47.0235 6.07118L49.5001 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M49.5 0L51.9769 6.07118L58.4534 6.57646L53.5075 10.8339L55.0336 17.2174L49.5 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7736 0L72.2505 6.07118L78.727 6.57646L73.7811 10.8339L75.3072 17.2174L69.7736 13.7774L64.2402 17.2174L65.7662 10.8339L60.8203 6.57646L67.2969 6.07118L69.7736 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M69.7734 0L72.2503 6.07118L78.7269 6.57646L73.781 10.8339L75.307 17.2174L69.7734 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.046 0L92.5229 6.07118L98.9995 6.57646L94.0536 10.8339L95.5796 17.2174L90.046 13.7774L84.5127 17.2174L86.0387 10.8339L81.0928 6.57646L87.5694 6.07118L90.046 0Z"
+                                                    fill="#FFAA00"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M90.0469 0L92.5237 6.07118L99.0003 6.57646L94.0544 10.8339L95.5804 17.2174L90.0469 13.7774V0Z"
+                                                    fill="#FFBD38"></path>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            2374 reviews
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        <div class="fs-6 fs-md-5 fw-bold">₹ 1,445.00</div>
+                                        <div class="fs-6 fs-md-5 text-secondary ">
+                                            <s>₹ 2,397.00</s>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-dark w-100">ADD TO CART <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-5 d-flex justify-content-center">
@@ -1579,6 +1747,25 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+
+
+    <script>
+        // Function to clear all filters
+        function clearFilters() {
+            // Get all checkboxes within the sidebar filters
+            var checkboxes = document.querySelectorAll('.sidebar-filters input[type="checkbox"]');
+
+            // Loop through each checkbox and uncheck it
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+
+        // Add an event listener to the clear filters button
+        document.getElementById('sidebar-clear-filters').addEventListener('click', clearFilters);
+    </script>
+
 
 
 </body>
