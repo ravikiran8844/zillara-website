@@ -13,15 +13,18 @@
 @font-face {
   font-family: Optima;
   src: url('/assets/fonts/OPTIMA.TTF');
+  font-display: swap;
 }
 @font-face {
-  font-family: Optima LT Pro;
+  font-family: Optima LT Pro, Optima;
   src: url('/assets/fonts/OptimaNovaLTProRegular.woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Inter;
   src: url('/assets/fonts/Inter-Regular.ttf');
+  font-display: swap;
 }
 
 body {
@@ -59,6 +62,13 @@ main {
 }
 
 /* announcment-bar */
+
+.announcment-bar{
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .announcment-bar__text {
   font-family: Optima;
