@@ -13,10 +13,25 @@
 @font-face {
   font-family: Optima;
   src: url('/assets/fonts/OPTIMA.TTF');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Optima;
+  src: url('/assets/fonts/OPTIMA_B.woff');
+  font-weight: bold;
   font-display: swap;
 }
 @font-face {
-  font-family: Optima LT Pro, Optima;
+  font-family: Optima;
+  src: url('/assets/fonts/Optima\ Medium.woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Optima LT Pro;
   src: url('/assets/fonts/OptimaNovaLTProRegular.woff');
   font-display: swap;
 }
@@ -182,8 +197,9 @@ header .nav-link img {
 
 
 .header-menu-links-lg-screen li a {
-  font-family: Optima LT Pro;
+  font-family: Optima;
   font-size: 14px;
+  font-weight: 500;
 }
 
 
