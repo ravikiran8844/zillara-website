@@ -14,6 +14,10 @@
   font-family: Optima;
   src: url('/assets/fonts/OPTIMA.TTF');
 }
+@font-face {
+  font-family: Optima LT Pro;
+  src: url('/assets/fonts/OptimaNovaLTProRegular.woff');
+}
 
 @font-face {
   font-family: Inter;
@@ -26,6 +30,7 @@ body {
   max-width: 1920px;
   margin: auto;
   font-size: 14px;
+  
 }
 
 .font-secondary {
@@ -168,6 +173,7 @@ header .nav-link img {
 
 .header-menu-links-lg-screen li a {
   font-family: Optima LT Pro;
+  font-size: 14px;
 }
 
 
@@ -469,7 +475,7 @@ header .nav-link img {
 .footer-section_text {
   color: #686868;
   font-family: Optima;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
@@ -553,7 +559,7 @@ header .nav-link img {
   .footer-section_text {
     color: #686868;
     font-family: Optima;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -582,7 +588,9 @@ header .nav-link img {
 }
 
 
-
+.footer-section{
+  --bs-nav-link-font-size:14px;
+}
 
 
 
