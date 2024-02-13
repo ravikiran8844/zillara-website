@@ -1112,6 +1112,10 @@ align-items: center; */
   }
 
 
-  .mobile-search-bar input,.mobile-search-bar .input-group{
+  /* .mobile-search-bar input,.mobile-search-bar .input-group{
     background-color: #fff !important;
+  } */
+
+  .mobile-search-bar_wrapper{
+    border-bottom: 1px solid #C7C7C7;
   }
