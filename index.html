@@ -1874,7 +1874,7 @@
                             for him and her</div>
                     </div>
                     <div class="d-none d-md-block">
-                        <button class="btn btn-outline-dark px-5 shop-all-btn">Explore the Collection</button>
+                        <button class="btn btn-outline-dark px-5 py-3 shop-all-btn">Explore the Collection</button>
                     </div>
                 </div>
 
@@ -3431,7 +3431,9 @@
                 }
             });
 
+         // Open details element on touch
             summary.addEventListener('touchstart', function (event) {
+                event.preventDefault(); // Prevent default touch behavior
                 const details = summary.parentElement;
                 if (!details.hasAttribute('open')) {
                     closeOtherDetails(details);
@@ -3451,6 +3453,8 @@
     </script>
 
 
+
+      
 
 
 
