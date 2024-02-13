@@ -17,12 +17,12 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: Optima;
   src: url('/assets/fonts/OPTIMA_B.woff');
-  font-weight: bold;
+  font-weight: 700;
   font-display: swap;
-}
+} */
 @font-face {
   font-family: Optima;
   src: url('/assets/fonts/Optima\ Medium.woff');
@@ -441,7 +441,8 @@ header .nav-link img {
 .multi-tabs-section .nav-tabs {
   width: fit-content;
   border: none;
-  border-bottom: 3px solid #CECECE;
+  border-bottom: 1.5px solid #CECECE;
+  gap: 10px;
 
 }
 
@@ -454,15 +455,16 @@ header .nav-link img {
   border: none;
   color: #282828;
   font-weight: 500;
-  padding: 0px 10px;
+  padding: 0px;
+  font-size: 16px;
 }
 
 .multi-tabs-section .nav-tabs .nav-link.active,
 .multi-tabs-section .nav-tabs .nav-item.show .nav-link {
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid #2D2D2D !important;
-  font-weight: 700;
+  border-bottom: 1.5px solid #2D2D2D !important;
+  font-weight: 600;
 }
 
 
@@ -1118,4 +1120,28 @@ align-items: center; */
 
   .mobile-search-bar_wrapper{
     border-bottom: 1px solid #C7C7C7;
+  }
+
+
+
+
+  .shop-all-btn{
+    border-bottom: 1.6867220401763916px solid rgb(45, 45, 45);
+    border-left: 1.1244813203811646px solid rgb(45, 45, 45);
+    border-right: 1.1244813203811646px solid rgb(45, 45, 45);
+    border-top: 1.1244813203811646px solid rgb(45, 45, 45);
+    border-radius: 3.37px;
+    background: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+
+  .btn-outline-dark{
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 4px;
+    color: rgb(45, 45, 45);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0px;
   }
