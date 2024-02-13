@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
     <title>Zillara - Shop Page</title>
 </head>
 
@@ -29,7 +31,7 @@
 
                 <div class="d-flex align-items-center">
                     <button class="btn d-block d-md-none ps-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="navbar-brand" href="/">
@@ -200,8 +202,8 @@
 
 
 
-        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
             <div class="offcanvas-header">
                 <div>
                     <img class="img-fluid" src="assets/images/logo.svg" alt="logo">
@@ -264,6 +266,93 @@
 
 
     </header>
+
+
+    <!-- <section>
+        <div>
+            <div class="mobile-search-bar mt-3 d-block d-md-none px-2 pb-3">
+                <form action="">
+                    <div class="input-group nav-search-input">
+                        <input placeholder="Search for Zilara Products" class="form-control" type="search" name=""
+                            id="">
+                        <div class="input-group-append d-flex align-items-center">
+                            <button class="bg-transparent border-0" type="submit">
+                                <svg width="17" height="27" viewBox="0 0 17 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.20123 19.11C11.3424 19.11 13.9025 16.5554 13.9025 13.4143V5.69572C13.9025 2.55455 11.3424 0 8.20123 0C5.06007 0 2.5 2.5546 2.5 5.69572V13.4143C2.5 16.5555 5.06007 19.11 8.20123 19.11ZM4.36389 5.69572C4.36389 3.58518 6.0907 1.86384 8.20123 1.86384C10.3118 1.86384 12.0386 3.58518 12.0386 5.69572V13.4143C12.0386 15.5248 10.3118 17.2462 8.20123 17.2462C6.0907 17.2462 4.36389 15.5248 4.36389 13.4143V5.69572Z"
+                                        fill="#2D2D2D" />
+                                    <path
+                                        d="M13.9463 20.2772C15.5251 18.9067 16.3913 17.0703 16.3913 15.1077C16.3913 14.5924 15.9746 14.1758 15.4593 14.1758C14.944 14.1758 14.5274 14.5924 14.5274 15.1077C14.5274 18.0735 11.6877 20.4912 8.19564 20.4912C4.70353 20.4912 1.86389 18.0737 1.86389 15.1077C1.86389 14.5924 1.44726 14.1758 0.931944 14.1758C0.416628 14.1758 0 14.5924 0 15.1077C0 17.0703 0.871649 18.9067 2.44494 20.2772C3.76061 21.4229 5.44356 22.1301 7.25808 22.311V24.3667H5.70669C5.1914 24.3667 4.77475 24.7834 4.77475 25.2987C4.77475 25.814 5.19138 26.2306 5.70669 26.2306H10.6734C11.1886 26.2306 11.6053 25.814 11.6053 25.2987C11.6053 24.7834 11.1887 24.3667 10.6734 24.3667H9.13295V22.3055C10.9475 22.1246 12.6304 21.4229 13.9461 20.2772H13.9463Z"
+                                        fill="#2D2D2D" />
+                                </svg>
+
+                            </button>
+                            <button class="bg-transparent border-0" type="submit">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1048 16.2301L17.9986 16.3692L18.1224 16.4929L22.5262 20.8968C22.7777 21.1941 22.8629 21.5978 22.7526 21.9713C22.6413 22.3472 22.3472 22.6413 21.9712 22.7526C21.5975 22.8629 21.1937 22.7779 20.8966 22.5265L16.4927 18.1226L16.369 17.9989L16.2299 18.1051C13.5223 20.1721 9.94761 20.7149 6.74879 19.5447C3.54997 18.3746 1.16944 15.6532 0.4349 12.3273L0.239685 12.3704L0.434899 12.3273C-0.299628 9.00155 0.713692 5.53048 3.1219 3.12195C5.53009 0.713444 9.00116 -0.29961 12.3271 0.434938L12.3702 0.239892L12.3271 0.434938C15.653 1.16948 18.3743 3.55004 19.5445 6.74889C20.7146 9.94791 20.1718 13.5226 18.1048 16.2301ZM4.76584 4.76655L4.76584 4.76656C3.32891 6.20358 2.5216 8.15242 2.5216 10.1847C2.5216 12.217 3.32883 14.1658 4.76584 15.6028L4.90726 15.4614L4.76584 15.6028C6.20285 17.0398 8.15175 17.8471 10.1839 17.8471C12.2162 17.8471 14.165 17.0399 15.602 15.6028L15.4606 15.4614L15.602 15.6028C17.0389 14.1658 17.8462 12.217 17.8462 10.1847C17.8462 8.15242 17.039 6.20358 15.602 4.76655L15.4606 4.90797L15.602 4.76655C14.165 3.3296 12.2162 2.52228 10.1839 2.52228C8.15168 2.52228 6.20285 3.32952 4.76584 4.76655Z"
+                                        fill="#2D2D2D" stroke="#F6F6F6" stroke-width="0.4" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d-none d-md-block">
+                <ul
+                    class="header-menu-links-lg-screen list-unstyled mb-0 py-3 d-flex justify-content-center align-items-center gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Rings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Earrings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Necklace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Bracelets</a>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gifting
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
 
 
 
@@ -341,6 +430,21 @@
                                 </div>
 
                             </div>
+
+
+
+                            <div class="mt-4">
+                                <div class="fs-5 fw-bold mb-3">Price</div>
+
+                                <div>
+                                    <input id="sidebar-price-range-filter" type="text" class="js-range-slider" name="my_range" value="" />
+                                </div>
+
+                                
+
+                            </div>
+
+
 
 
                             <div class="mt-4">
@@ -549,10 +653,176 @@
 
 
                         <div class="d-block d-lg-none mb-3">
+
+
+                            <div class="d-flex gap-2 justify-content-between mb-3">
+                                <div>
+                                    <button class="btn btn-outline-dark"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                                        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
+                                      </svg>
+                                      Filter by</button>
+                                </div>
+
+                                <div class="d-flex gap-2 align-items-center">
+                                    <label for="" style="width: fit-content;text-align: center;">Sort By</label>
+                                    <select class="fs-6 rounded-3" style="box-shadow: none;" name="" id="sort-by-options">
+                                        <option value="">All</option>
+                                        <option value="">Price - Low to High</option>
+                                        <option value="">Price - High to Low</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
                             <div class="d-flex align-items-center  justify-content-between gap-3">
                                 <div class="fs-5 fw-bold">Jewellery</div>
                                 <div class="fs-6 fw-medium text-secondary">962 Designs</div>
                             </div>
+
+
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filters</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="mobile-filters">
+
+                                        <div class="text-end">
+                                            <button class="btn btn-white" id="mobile-clear-filters">Clear filters</button>
+                                        </div>
+
+                                        <div>
+                                            <div class="fs-5 fw-bold mb-3">Category</div>   
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <div>
+                                                    <input id="mb-category-pendants" type="checkbox">
+                                                    <label for="mb-category-pendants">Pendants</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-category-earings" type="checkbox">
+                                                    <label for="mb-category-earings">Earings</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-category-bracelets" type="checkbox">
+                                                    <label for="mb-category-bracelets">Bracelets</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="fs-5 fw-bold mb-3">Price</div>
+                                            <div>
+                                                <input id="mb-price-range-filter" type="text" class="js-range-slider" name="my_range" value="">
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="fs-5 fw-bold mb-3">Style</div>
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <div>
+                                                    <input id="mb-style-office" type="checkbox">
+                                                    <label for="mb-style-office">Office</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-style-party" type="checkbox">
+                                                    <label for="mb-style-party">Party</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-style-wedding" type="checkbox">
+                                                    <label for="mb-style-wedding">Wedding</label>
+                                                </div>
+                                            </div>
+                                            <!-- <div>
+                                                <button class="btn btn-dark w-100 mt-3">All</button>
+                                            </div> -->
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="fs-5 fw-bold mb-3">Gemstone</div>
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <div>
+                                                    <input id="mb-Gemstone-Birthstones" type="checkbox">
+                                                    <label for="mb-Gemstone-Birthstones">Birthstones</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Gemstone-Sapphires" type="checkbox">
+                                                    <label for="mb-Gemstone-Sapphires">Sapphires</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Gemstone-Pearls" type="checkbox">
+                                                    <label for="mb-Gemstone-Pearls">Pearls</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Gemstone-Opals" type="checkbox">
+                                                    <label for="mb-Gemstone-Opals">Opals</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Gemstone-No-Gems" type="checkbox">
+                                                    <label for="mb-Gemstone-No-Gems">No Gems</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Gemstone-wedding" type="checkbox">
+                                                    <label for="mb-Gemstone-All">All</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="fs-5 fw-bold mb-3">Weight Ranges</div>
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-0-2" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-0-2">0-2 g (608)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-0-5" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-0-5">0-5 g (930)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-5-10" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-5-10">5-10 g (222)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-10-20" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-10-20">10-20 g (47)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-20-30" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-20-30">20-30 g (9)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Weight-Ranges-30" type="checkbox">
+                                                    <label for="mb-Weight-Ranges-30">>30 g (2)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="fs-5 fw-bold mb-3">Ring Size</div>
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <div>
+                                                    <input id="mb-Ring-size-5" type="checkbox">
+                                                    <label for="mb-Ring-size-5">5 (17)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Ring-size-6" type="checkbox">
+                                                    <label for="mb-Ring-size-6">6 (182)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Ring-size-7" type="checkbox">
+                                                    <label for="mb-Ring-size-7">7 (260)</label>
+                                                </div>
+                                                <div>
+                                                    <input id="mb-Ring-size-8" type="checkbox">
+                                                    <label for="mb-Ring-size-8">8 (305)</label>
+                                                </div>
+                                            </div>
+                                            <!-- <div>
+                                                <button class="btn btn-dark w-100 mt-3">All</button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              </div>
 
                         </div>
 
@@ -1743,7 +2013,11 @@
 
     </footer>
 
-
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
@@ -1751,10 +2025,11 @@
 
 
     <script>
+        // desktop filters
         // Function to clear all filters
         function clearFilters() {
             // Get all checkboxes within the sidebar filters
-            var checkboxes = document.querySelectorAll('.sidebar-filters input[type="checkbox"]');
+            let checkboxes = document.querySelectorAll('.sidebar-filters input[type="checkbox"]');
 
             // Loop through each checkbox and uncheck it
             checkboxes.forEach(function (checkbox) {
@@ -1766,7 +2041,35 @@
         document.getElementById('sidebar-clear-filters').addEventListener('click', clearFilters);
     </script>
 
+<script>
+    // mobile filters
+    // Function to clear all filters
+    function clearMobileFilters() {
+        // Get all checkboxes within the sidebar filters
+        let checkboxes = document.querySelectorAll('.mobile-filters input[type="checkbox"]');
 
+        // Loop through each checkbox and uncheck it
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked = false;
+        });
+    }
+
+    // Add an event listener to the clear filters button
+    document.getElementById('mobile-clear-filters').addEventListener('click', clearMobileFilters);
+</script>
+
+<script>
+    $("#mb-price-range-filter").ionRangeSlider({
+   type: "double",
+   grid: true,
+   min: 0,
+   max: 12000,
+   from: 800,
+   to: 8000,
+   prefix: "₹"
+});
+
+</script>
 
 </body>
 
