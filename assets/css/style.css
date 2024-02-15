@@ -1135,7 +1135,7 @@ align-items: center; */
     border: 1px solid rgb(193, 193, 193);
     border-radius: 4px;
     color: rgb(45, 45, 45);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -1144,7 +1144,7 @@ align-items: center; */
 
   .btn-dark{
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 2.5%;
     text-align: center;
@@ -1170,3 +1170,28 @@ align-items: center; */
   /* .filters-grid-items label{
     width: 100%;
   } */
+
+  /* @media (max-width:768px) {
+    .btn-dark,.btn-outline-light,.btn-outline-dark,.shop-all-btn{
+      font-size: 14px !important;
+    }
+  } */
+
+  .shop-page-add-to-cart-btn{
+    font-size: 14px !important;
+    padding:16px 0px !important;
+    text-align: center;
+  }
+
+  @media (min-width:768px) {
+    .shop-page-add-to-cart-btn{
+      font-size: 16px !important;
+      text-align: center;
+    }
+  }
+
+
+
+  .stores-page-card-bg{
+    background: rgb(245, 245, 245);
+  }
