@@ -1122,17 +1122,14 @@ align-items: center; */
 
 
   .shop-all-btn{
-    border-bottom: 1.6867220401763916px solid rgb(45, 45, 45);
-    border-left: 1.1244813203811646px solid rgb(45, 45, 45);
-    border-right: 1.1244813203811646px solid rgb(45, 45, 45);
-    border-top: 1.1244813203811646px solid rgb(45, 45, 45);
-    border-radius: 3.37px;
-    background: rgb(255, 255, 255);
-    font-weight: 700;
+    border-radius: 4px;
+    border: 2px solid #2D2D2D !important;
+    background: #FFF;
+    font-weight: 600;
   }
 
   .btn-outline-dark{
-    border: 1px solid rgb(193, 193, 193);
+    border: 2px solid #C1C1C1;
     border-radius: 4px;
     color: rgb(45, 45, 45);
     font-size: 16px;
