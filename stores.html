@@ -11,6 +11,63 @@
     <title>Zillara - Find a Store</title>
 </head>
 
+<style>
+
+
+gmpx-store-locator {
+  width: 100%;
+  height: 100%;
+
+  /* These parameters customize the appearance of Locator Plus. See the documentation at
+     https://github.com/googlemaps/extended-component-library/blob/main/src/store_locator/README.md
+     for more information. */
+  --gmpx-color-surface: #fff;
+  --gmpx-color-on-surface: #212121;
+  --gmpx-color-on-surface-variant: #757575;
+  --gmpx-color-primary: #1967d2;
+  --gmpx-color-outline: #e0e0e0;
+  --gmpx-fixed-panel-width-row-layout: 28.5em;
+  --gmpx-fixed-panel-height-column-layout: 65%;
+  --gmpx-font-family-base: "Roboto", sans-serif;
+  --gmpx-font-family-headings: "Roboto", sans-serif;
+  --gmpx-font-size-base: 0.875rem;
+  --gmpx-hours-color-open: #188038;
+  --gmpx-hours-color-closed: #d50000;
+  --gmpx-rating-color: #ffb300;
+  --gmpx-rating-color-empty: #e0e0e0;
+}
+</style>
+<script>
+    const CONFIGURATION = {
+      "locations": [
+        {"title":"Jewelone Coimbatore","address1":"No. 284 &, 285, Cross Cut Rd, Peranaidu Layout, Ram Nagar, Gandhipuram, Coimbatore, Tamil Nadu 641012, India", "coords":{"lat":11.017003,"lng":76.963993},"placeId":"ChIJA7QLfP9YqDsR_k9amWQXVFQ"},
+        {"title":"Jewelone Experience Center","address1":"SF. NO. 460, 461/1 Kathirnaickenpalayam Road, Post, Thoppampatti, Coimbatore, Narasimhanaickenpalayam, Tamil Nadu 641017, India","coords":{"lat":11.103166,"lng":76.934209},"placeId":"ChIJweZMNhf3qDsRPv54pRO7yLs"},
+        {"title":"Jewelone Chennai","address1":"Near Thirumangalam Metro station, 233-235, 2nd Ave, L Block, Anna Nagar West, Anna Nagar, Chennai, Tamil Nadu 600040, India","coords":{"lat":13.085065,"lng":80.201262},"placeId":"ChIJgf34DdNnUjoR18qynFlxQpI"},
+        {"title":"Jewelone Madurai","address1":"123, Netaji Rd, opposite Modern Restaurant, Madurai Main, Madurai, Tamil Nadu 625001, India","coords":{"lat":9.917816,"lng":78.116923},"placeId":" ChIJtc1F-4PFADsRitSYwbIA2DI"},
+        {"title":"Jewelone Vellore","address1":"18/1, Anna Salai, opp. Voorhees College, Vasanthapuram, Srinivasan Nagar, Vellore, Tamil Nadu 632001, India","coords":{"lat":12.910461,"lng":79.131816},"placeId":"ChIJxZ1aZ904rTsRx0B3_hpnacQ"},
+        {"title":"Jewelone Ramanathapuram","address1":"65 Swamy Vivekanda, Salai St, Chalai Bazar, Ramanathapuram, Tamil Nadu 623501, India","coords":{"lat":9.36968,"lng":78.833963},"placeId":"ChIJHahh_6OiATsRVvzI9ZCqjJ0"},
+        {"title":"Jewelone Salem","address1":"1/2, Omalur Main Rd, Arthanari Nagar, Swarnapuri, Salem, Tamil Nadu 636016, India","coords":{"lat":11.670864,"lng":78.139411},"placeId":"ChIJs5WKl0VvqTsRUJpTYi5JtIg"},
+        {"title":"Jewelone Erode","address1":"85, RKV Rd, Marapalam, Erode, Tamil Nadu 638001, India","coords":{"lat":11.344969,"lng":77.730169 },"placeId":"ChIJ9Rj0l0VvqTsRRNwfHfnwFc8"},
+        {"title":"Jewelone Pollachi","address1":"Narasus Coffee Opp, 34, Bazaar St, Puliampatti, Pollachi, Tamil Nadu 642001, India","coords":{"lat":10.65641,"lng":77.009116},"placeId":"ChIJzZb3e_9YqDsRk0CtorS8Dzc"},
+        {"title":"Jewelone Pondicherry","address1":"88, Kamaraj Salai, Near Jayaram Hotel, Kamaraj Nagar, Puducherry, 605011, India","coords":{"lat":11.937466,"lng":79.82286},"placeId":"ChIJLzkGF35hUzoRqKXTednCqYw"},
+        {"title":"Jewelone Hosur","address1":"NO.8, OPP HOSUR BUS STAND, NEAR FLOWER MARKET, Surya Nagar, Sri Nagar, Hosur, Tamil Nadu 635109, India","coords":{"lat":12.735892,"lng":77.827999 },"placeId":"ChIJERzvKM9wrjsRS8Rd0UciRjQ"},
+        {"title":"Jewelone Udumalaipettai","address1":"24, Dhali Rd, Udumalaipettai, Tamil Nadu 641126, India","coords":{"lat":10.586591,"lng":77.245599},"placeId":"ChIJJdShw6nNqTsR8sLfe-aQcWI"}
+      ],
+      "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+      "mapsApiKey": "AIzaSyAHHUJ_8LdeUmB5gEr8jLa84hv3MKYQcdY",
+      "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":true}
+    };
+
+  </script>
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', async () => {
+      await customElements.whenDefined('gmpx-store-locator');
+      const locator = document.querySelector('gmpx-store-locator');
+      locator.configureFromQuickBuilder(CONFIGURATION);
+    });
+  </script>
+        <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+
 <body>
 
     <div class="bg-dark announcment-bar">
@@ -270,6 +327,24 @@
 
 
     <main>
+
+
+
+
+        <section class="store-locator-section">
+            <div class="container py-5">
+                <div class="col-12 mb-5 text-center">
+                    <div class="fs-2 fw-bold">Find a store near you</div>
+                    <p class="fs-5">Find a Zilara store in your locality, the Zilara family is
+                        growing everyday</p>
+
+                </div>
+                <div class="col-12" style="height:600px">
+                    <gmpx-api-loader key="AIzaSyAHHUJ_8LdeUmB5gEr8jLa84hv3MKYQcdY" solution-channel="GMP_QB_locatorplus_v10_cABDF"></gmpx-api-loader>
+                    <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
+                </div>
+            </div>
+        </section>
 
 
         <section>
@@ -666,10 +741,14 @@
 
     </footer>
 
-
+    
+   
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+
+
 
 </body>
 

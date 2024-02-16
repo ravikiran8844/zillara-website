@@ -1279,3 +1279,8 @@ align-items: center; */
   .cotta-font{
     font-family: Cotta !important;
   }
+  
+
+  .dropdown-item.active, .dropdown-item:active{
+    background-color: #5B5752 !important;
+  }
