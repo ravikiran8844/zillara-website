@@ -107,6 +107,15 @@ main {
 
 
 /* header */
+
+header{
+  background: #F6F6F6;
+}
+@media (min-width:768px) {
+  header{
+    background-color: #fff;
+  }
+}
 header .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -120,6 +129,30 @@ header .dropdown-toggle::after {
   width: 159px;
   height: 34.8px;
 }
+.nav-search-input {
+  max-width: 395px;
+  border-radius: 8px;
+  background: #fff !important;
+  margin: auto;
+}
+
+.nav-search-input input::placeholder {
+  color: #B8B8B8;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.35px;
+  font-weight: 500;
+}
+
+.nav-search-input input {
+  border: none;
+  outline: none;
+  background-color: #fff !important;
+  box-shadow: none !important;
+  color: #B8B8B8;
+  font-size: 16px;
+
+}
 
 @media (min-width: 768px) {
   .navbar-brand img {
@@ -127,29 +160,30 @@ header .dropdown-toggle::after {
     height: 53.41px;
 
   }
+  .nav-search-input {
+    max-width: 395px;
+    border-radius: 8px;
+    background: #F6F6F6 !important;
+    margin: auto;
+  }
+  
+  .nav-search-input input::placeholder {
+    color: #B8B8B8;
+    font-size: 16px;
+  }
+  
+  .nav-search-input input {
+    border: none;
+    outline: none;
+    background-color: #F6F6F6 !important;
+    box-shadow: none !important;
+    color: #B8B8B8;
+    font-size: 16px;
+  
+  }
 }
 
-.nav-search-input {
-  max-width: 395px;
-  border-radius: 8px;
-  background: #F6F6F6 !important;
-  margin: auto;
-}
 
-.nav-search-input input::placeholder {
-  color: #B8B8B8;
-  font-size: 16px;
-}
-
-.nav-search-input input {
-  border: none;
-  outline: none;
-  background-color: #F6F6F6 !important;
-  box-shadow: none !important;
-  color: #B8B8B8;
-  font-size: 16px;
-
-}
 
 .nav-search-input svg {
   height: 17px;
@@ -440,7 +474,7 @@ header .nav-link img {
 .multi-tabs-section .nav-tabs {
   width: fit-content;
   border: none;
-  border-bottom: 1.5px solid #CECECE;
+  border-bottom: 2px solid #CECECE;
   gap: 17px;
 
 }
@@ -455,15 +489,17 @@ header .nav-link img {
   color: #282828;
   font-weight: 500;
   padding: 0px;
-  font-size: 16px;
+  font-size: 18px;
+  padding-bottom: 5px;
+
 }
 
 .multi-tabs-section .nav-tabs .nav-link.active,
 .multi-tabs-section .nav-tabs .nav-item.show .nav-link {
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid #2D2D2D !important;
-  font-weight: 600;
+  border-bottom: 2px solid #2D2D2D !important;
+  /* font-weight: 600; */
 }
 
 
@@ -483,6 +519,12 @@ header .nav-link img {
 }
 
 
+.fs-1,.fs-2{
+  letter-spacing: 0.6px;
+}
+.fs-3.fs-4{
+  letter-spacing: 0.32px !important;
+}
 
 
 
@@ -1035,6 +1077,9 @@ align-items: center; */
 
 
 /* shop page */
+.shop-page-top-banner-title{
+  letter-spacing: 9.54px;
+}
 .shop-page-products.grid{
   display: grid;
   grid-template-columns:1fr;
@@ -1043,7 +1088,7 @@ align-items: center; */
 .shop-page-product{
   height:100%;
 }
-@media (min-width:300px) {
+@media (min-width:330px) {
   .shop-page-products.grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -1081,7 +1126,7 @@ align-items: center; */
 
 
   .sidebar-filters input[type='checkbox'] + label{
-    height: 40px;
+    height: 46px;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -1212,14 +1257,20 @@ align-items: center; */
   .shop-page-add-to-cart-btn{
     font-size: 14px !important;
     text-align: center;
-    width: 92% !important;
-    height: 42px;
+    height: 46px;
+    width: 100%;
   }
 
   @media (min-width:768px) {
     .shop-page-add-to-cart-btn{
       font-size: 16px !important;
       text-align: center;
+    }
+    .shop-page-add-to-cart-btn{
+      font-size: 14px !important;
+      text-align: center;
+      width: 92% !important;
+      height: 46px;
     }
   }
 
@@ -1254,7 +1305,7 @@ align-items: center; */
 
 
   .add-to-cart{
-    height: 42px;
+    height: 46px;
     width: 90% !important;
     text-align: center;
   }
@@ -1345,3 +1396,15 @@ align-items: center; */
   }
 }
 
+.cart-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.btn-dark,.btn-white{
+  height: 46px;
+}
+.big-btn{
+ height: 52px;
+}

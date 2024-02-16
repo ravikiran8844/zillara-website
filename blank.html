@@ -27,31 +27,47 @@
         </div>
     </div>
 
-    <header class="sticky-top bg-white">
+    <header class="sticky-top">
 
         <nav class="navbar">
             <div class="container-lg flex-nowrap">
 
-
-                <div class="d-flex align-items-center">
-                    <button class="btn d-block d-md-none ps-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                        <span class="navbar-toggler-icon"></span>
+                <div
+                    class="d-flex align-items-center flex-grow-1 flex-md-grow-0">
+                    <button class="btn d-block d-md-none ps-0" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu"
+                        aria-controls="offcanvasMenu">
+                        <span><svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="22" viewBox="0 0 32 22"
+                                fill="none">
+                                <path d="M1 2H28" stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M1 20H28" stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M1 11H19" stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg></span>
                     </button>
-                    <a class="navbar-brand" href="/">
-                        <img class="img-fluid" src="assets/images/logo.svg" alt="logo">
+                    <a class="navbar-brand m-auto m-md-0 px-2" href="/">
+                        <img class="img-fluid" src="assets/images/logo.svg"
+                            alt="logo">
                     </a>
                 </div>
 
-
-                <div class="flex-grow-1 d-none d-md-block">
-                    <form action="">
+                <div class="flex-grow-1 d-none d-md-block px-3">
+                    <form action>
                         <div class="input-group nav-search-input">
-                            <input placeholder="Search for Zilara Products" class="form-control" type="search" name=""
-                                id="">
+                            <input placeholder="Search for Zilara Products"
+                                class="form-control" type="search" name
+                                id>
                             <div class="input-group-append">
                                 <button class="btn" type="submit">
-                                    <svg width="17" height="27" viewBox="0 0 17 27" fill="none"
+                                    <svg width="17" height="27"
+                                        viewBox="0 0 17 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M8.20123 19.11C11.3424 19.11 13.9025 16.5554 13.9025 13.4143V5.69572C13.9025 2.55455 11.3424 0 8.20123 0C5.06007 0 2.5 2.5546 2.5 5.69572V13.4143C2.5 16.5555 5.06007 19.11 8.20123 19.11ZM4.36389 5.69572C4.36389 3.58518 6.0907 1.86384 8.20123 1.86384C10.3118 1.86384 12.0386 3.58518 12.0386 5.69572V13.4143C12.0386 15.5248 10.3118 17.2462 8.20123 17.2462C6.0907 17.2462 4.36389 15.5248 4.36389 13.4143V5.69572Z"
@@ -63,11 +79,13 @@
 
                                 </button>
                                 <button class="btn" type="submit">
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                    <svg width="23" height="23"
+                                        viewBox="0 0 23 23" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M18.1048 16.2301L17.9986 16.3692L18.1224 16.4929L22.5262 20.8968C22.7777 21.1941 22.8629 21.5978 22.7526 21.9713C22.6413 22.3472 22.3472 22.6413 21.9712 22.7526C21.5975 22.8629 21.1937 22.7779 20.8966 22.5265L16.4927 18.1226L16.369 17.9989L16.2299 18.1051C13.5223 20.1721 9.94761 20.7149 6.74879 19.5447C3.54997 18.3746 1.16944 15.6532 0.4349 12.3273L0.239685 12.3704L0.434899 12.3273C-0.299628 9.00155 0.713692 5.53048 3.1219 3.12195C5.53009 0.713444 9.00116 -0.29961 12.3271 0.434938L12.3702 0.239892L12.3271 0.434938C15.653 1.16948 18.3743 3.55004 19.5445 6.74889C20.7146 9.94791 20.1718 13.5226 18.1048 16.2301ZM4.76584 4.76655L4.76584 4.76656C3.32891 6.20358 2.5216 8.15242 2.5216 10.1847C2.5216 12.217 3.32883 14.1658 4.76584 15.6028L4.90726 15.4614L4.76584 15.6028C6.20285 17.0398 8.15175 17.8471 10.1839 17.8471C12.2162 17.8471 14.165 17.0399 15.602 15.6028L15.4606 15.4614L15.602 15.6028C17.0389 14.1658 17.8462 12.217 17.8462 10.1847C17.8462 8.15242 17.039 6.20358 15.602 4.76655L15.4606 4.90797L15.602 4.76655C14.165 3.3296 12.2162 2.52228 10.1839 2.52228C8.15168 2.52228 6.20285 3.32952 4.76584 4.76655Z"
-                                            fill="#2D2D2D" stroke="#F6F6F6" stroke-width="0.4" />
+                                            fill="#2D2D2D" stroke="#F6F6F6"
+                                            stroke-width="0.4" />
                                     </svg>
 
                                 </button>
@@ -76,32 +94,46 @@
                     </form>
                 </div>
 
-
-
                 <div>
-                    <ul class="menu-links-with-icon list-unstyled d-flex gap-1 gap-lg-4 mb-0">
+                    <ul
+                        class="menu-links-with-icon list-unstyled d-flex gap-2 gap-lg-4 mb-0">
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column gap-1 align-items-center" href="stores.html">
-                                <img src="/assets/images/icons/stores.png" width="24" height="24" alt="cart" />
-                                <span class="d-none d-lg-block">STORES</span>
+                            <a
+                                class="nav-link d-flex flex-column gap-1 align-items-center"
+                                href="stores.html">
+                                <img src="/assets/images/icons/stores.png"
+                                    width="24" height="24" alt="cart" />
+                                <span
+                                    class="d-none d-lg-block">STORES</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column  gap-1 align-items-center" href="">
-                                <img src="/assets/images/icons/account.png" width="24" height="24" alt="cart" />
-                                <span class="d-none d-lg-block">ACCOUNT</span>
+                            <a
+                                class="nav-link d-flex flex-column  gap-1 align-items-center"
+                                href>
+                                <img src="/assets/images/icons/account.png"
+                                    width="24" height="24" alt="cart" />
+                                <span
+                                    class="d-none d-lg-block">ACCOUNT</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column gap-1 align-items-center" href="">
-                                <img src="/assets/images/icons/wishlist.png" width="24" height="24" alt="cart" />
-                                <span class="d-none d-lg-block">WHISLIST</span>
+                            <a
+                                class="nav-link d-flex flex-column gap-1 align-items-center"
+                                href>
+                                <img src="/assets/images/icons/wishlist.png"
+                                    width="24" height="24" alt="cart" />
+                                <span
+                                    class="d-none d-lg-block">WHISLIST</span>
 
                             </a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link d-flex flex-column gap-1 align-items-center position-relative" href="">
-                                <img src="/assets/images/icons/cart.png" width="24" height="24" alt="cart" />
+                            <a
+                                class="nav-link d-flex flex-column gap-1 align-items-center position-relative"
+                                href>
+                                <img src="/assets/images/icons/cart.png"
+                                    width="24" height="24" alt="cart" />
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
                                     99
@@ -110,25 +142,38 @@
                             </a>
                         </li>
 
-
                     </ul>
 
                 </div>
             </div>
 
-
-
         </nav>
 
         <div>
-            <div class="d-block d-md-none px-2 pb-3 mobile-search-bar_wrapper">
-                <form action="">
+            <div
+                class="d-block d-md-none px-2 pb-3 mobile-search-bar_wrapper">
+                <form action>
                     <div class="input-group nav-search-input">
-                        <input placeholder="Search for Zilara Products" class="form-control" type="search" name=""
-                            id="">
+                        <div class="input-group-prepend">
+                            <button class="btn" type="submit">
+                                <svg width="23" height="23"
+                                    viewBox="0 0 23 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1048 16.2301L17.9986 16.3692L18.1224 16.4929L22.5262 20.8968C22.7777 21.1941 22.8629 21.5978 22.7526 21.9713C22.6413 22.3472 22.3472 22.6413 21.9712 22.7526C21.5975 22.8629 21.1937 22.7779 20.8966 22.5265L16.4927 18.1226L16.369 17.9989L16.2299 18.1051C13.5223 20.1721 9.94761 20.7149 6.74879 19.5447C3.54997 18.3746 1.16944 15.6532 0.4349 12.3273L0.239685 12.3704L0.434899 12.3273C-0.299628 9.00155 0.713692 5.53048 3.1219 3.12195C5.53009 0.713444 9.00116 -0.29961 12.3271 0.434938L12.3702 0.239892L12.3271 0.434938C15.653 1.16948 18.3743 3.55004 19.5445 6.74889C20.7146 9.94791 20.1718 13.5226 18.1048 16.2301ZM4.76584 4.76655L4.76584 4.76656C3.32891 6.20358 2.5216 8.15242 2.5216 10.1847C2.5216 12.217 3.32883 14.1658 4.76584 15.6028L4.90726 15.4614L4.76584 15.6028C6.20285 17.0398 8.15175 17.8471 10.1839 17.8471C12.2162 17.8471 14.165 17.0399 15.602 15.6028L15.4606 15.4614L15.602 15.6028C17.0389 14.1658 17.8462 12.217 17.8462 10.1847C17.8462 8.15242 17.039 6.20358 15.602 4.76655L15.4606 4.90797L15.602 4.76655C14.165 3.3296 12.2162 2.52228 10.1839 2.52228C8.15168 2.52228 6.20285 3.32952 4.76584 4.76655Z"
+                                        fill="#2D2D2D" stroke="#F6F6F6"
+                                        stroke-width="0.4" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <input placeholder="Search for Zilara Products"
+                            class="form-control" type="search" name
+                            id>
                         <div class="input-group-append">
                             <button class="btn" type="submit">
-                                <svg width="17" height="27" viewBox="0 0 17 27" fill="none"
+                                <svg width="17" height="27"
+                                    viewBox="0 0 17 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.20123 19.11C11.3424 19.11 13.9025 16.5554 13.9025 13.4143V5.69572C13.9025 2.55455 11.3424 0 8.20123 0C5.06007 0 2.5 2.5546 2.5 5.69572V13.4143C2.5 16.5555 5.06007 19.11 8.20123 19.11ZM4.36389 5.69572C4.36389 3.58518 6.0907 1.86384 8.20123 1.86384C10.3118 1.86384 12.0386 3.58518 12.0386 5.69572V13.4143C12.0386 15.5248 10.3118 17.2462 8.20123 17.2462C6.0907 17.2462 4.36389 15.5248 4.36389 13.4143V5.69572Z"
@@ -139,15 +184,7 @@
                                 </svg>
 
                             </button>
-                            <button class="btn" type="submit">
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.1048 16.2301L17.9986 16.3692L18.1224 16.4929L22.5262 20.8968C22.7777 21.1941 22.8629 21.5978 22.7526 21.9713C22.6413 22.3472 22.3472 22.6413 21.9712 22.7526C21.5975 22.8629 21.1937 22.7779 20.8966 22.5265L16.4927 18.1226L16.369 17.9989L16.2299 18.1051C13.5223 20.1721 9.94761 20.7149 6.74879 19.5447C3.54997 18.3746 1.16944 15.6532 0.4349 12.3273L0.239685 12.3704L0.434899 12.3273C-0.299628 9.00155 0.713692 5.53048 3.1219 3.12195C5.53009 0.713444 9.00116 -0.29961 12.3271 0.434938L12.3702 0.239892L12.3271 0.434938C15.653 1.16948 18.3743 3.55004 19.5445 6.74889C20.7146 9.94791 20.1718 13.5226 18.1048 16.2301ZM4.76584 4.76655L4.76584 4.76656C3.32891 6.20358 2.5216 8.15242 2.5216 10.1847C2.5216 12.217 3.32883 14.1658 4.76584 15.6028L4.90726 15.4614L4.76584 15.6028C6.20285 17.0398 8.15175 17.8471 10.1839 17.8471C12.2162 17.8471 14.165 17.0399 15.602 15.6028L15.4606 15.4614L15.602 15.6028C17.0389 14.1658 17.8462 12.217 17.8462 10.1847C17.8462 8.15242 17.039 6.20358 15.602 4.76655L15.4606 4.90797L15.602 4.76655C14.165 3.3296 12.2162 2.52228 10.1839 2.52228C8.15168 2.52228 6.20285 3.32952 4.76584 4.76655Z"
-                                        fill="#2D2D2D" stroke="#F6F6F6" stroke-width="0.4" />
-                                </svg>
 
-                            </button>
                         </div>
                     </div>
                 </form>
@@ -168,51 +205,64 @@
                         <a class="nav-link" href="shop.html">Bracelets</a>
                     </li>
                     <li class="nav-item dropdown hover-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Gifting
                         </a>
                         <ul class="dropdown-menu" data-bs-popper="static">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown hover-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Collections
                         </a>
                         <ul class="dropdown-menu" data-bs-popper="static">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown hover-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu" data-bs-popper="static">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
 
-
-
-        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasMenu"
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1"
+            id="offcanvasMenu"
             aria-labelledby="offcanvasMenuLabel">
             <div class="offcanvas-header">
                 <div>
-                    <img class="img-fluid" src="assets/images/logo.svg" alt="logo">
+                    <img class="img-fluid" src="assets/images/logo.svg"
+                        alt="logo">
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
 
@@ -230,44 +280,54 @@
                         <a class="nav-link" href="shop.html">Bracelets</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Gifting
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Collections
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                    else here</a></li>
                         </ul>
 
                     </li>
                 </ul>
             </div>
         </div>
-
-
 
     </header>
 
@@ -307,7 +367,7 @@
                             <input placeholder="Enter your mobile number" type="text"
                                 class="form-control bg-transparent rounded-0 w-auto" aria-label="Sizing example input"
                                 aria-describedby="newsletter-input">
-                            <button class="input-group-text btn btn-outline-light  px-5 py-2" id="newsletter-input">Avail
+                            <button class="input-group-text btn btn-outline-light  px-5 big-btn" id="newsletter-input">Avail
                                 Offer</button>
                         </div>
                     </div>
@@ -323,7 +383,7 @@
         <section class="footer-section pt-5 pb-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4 mb-5 md-lg-0 text-center text-md-start pe-lg-4">
+                    <div class="col-12 col-lg-4 mb-5 md-lg-0 text-center text-md-start pe-lg-5">
                         <div style="max-width: 400px;" class="m-auto">
                             <div class="mb-4">
                                 <img class="img-fluid" src="assets/images/logo.svg" alt="logo">
