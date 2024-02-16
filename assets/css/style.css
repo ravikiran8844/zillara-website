@@ -1284,3 +1284,16 @@ align-items: center; */
   .dropdown-item.active, .dropdown-item:active{
     background-color: #5B5752 !important;
   }
+
+
+   /* Custom CSS to hide the spinner by default */
+   .spinner-border {
+    display: none;
+    margin: auto;
+}
+
+
+.addToCart{
+  display: block;
+
+}
