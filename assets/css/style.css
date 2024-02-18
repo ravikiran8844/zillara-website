@@ -1126,7 +1126,8 @@ align-items: center; */
 
 
   .sidebar-filters input[type='checkbox'] + label{
-    height: 46px;
+    min-height: 46px;
+    height: 100%;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -1135,13 +1136,17 @@ align-items: center; */
     padding: 10px;
     color: rgb(70, 70, 70);
     font-family: Optima LT Pro;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 2.5%;
     text-align: left;
     cursor: pointer;
   }
+  .sidebar-filters input[type='checkbox'] + label .filter-item-count{
+    color: #CECECE;
+    margin-left: 4px;
+  }
+
   .sidebar-filters input[type='checkbox']:checked + label{
     background: rgb(45, 45, 45);
     color: #fff;
@@ -1156,7 +1161,8 @@ align-items: center; */
 
 
   .mobile-filters input[type='checkbox'] + label{
-    height: 40px;
+    min-height: 40px;
+    height: 100%;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -1165,17 +1171,22 @@ align-items: center; */
     padding: 10px;
     color: rgb(70, 70, 70);
     font-family: Optima LT Pro;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 2.5%;
     text-align: left;
     cursor: pointer;
   }
+  .mobile-filters input[type='checkbox'] + label .filter-item-count{
+    color: #CECECE;
+    margin-left: 4px;
+  }
   .mobile-filters input[type='checkbox']:checked + label{
     background: rgb(45, 45, 45);
     color: #fff;
   }
+
 
   .irs--flat .irs-bar,.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single,.irs--flat .irs-handle>i:first-child {
     background-color: #000 !important;
