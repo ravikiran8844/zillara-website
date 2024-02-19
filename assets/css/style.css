@@ -1474,3 +1474,9 @@ align-items: center; */
 .big-btn{
  height: 52px;
 }
+
+
+.giftingSlider img{
+  aspect-ratio: 1;
+  width: 100%;
+}
