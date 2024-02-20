@@ -1087,6 +1087,7 @@ align-items: center; */
 }
 .shop-page-product{
   height:100%;
+  margin-bottom: 10px;
 }
 @media (min-width:330px) {
   .shop-page-products.grid{
@@ -1108,7 +1109,11 @@ align-items: center; */
   aspect-ratio: 1;
   object-fit: contain;
 }
-
+.shop-page-products.grid .shop-page-product{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .shop-page-products.list {
   display: grid;
@@ -1118,6 +1123,7 @@ align-items: center; */
 
 .shop-page-products.list .shop-page-product {
   display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
