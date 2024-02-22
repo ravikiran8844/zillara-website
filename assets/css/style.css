@@ -1486,3 +1486,10 @@ align-items: center; */
   aspect-ratio: 1;
   width: 100%;
 }
+
+
+
+
+.grid-view.active,.list-view.active{
+  background-color: #fff !important;
+}

@@ -737,8 +737,8 @@
                                     </div>
 
                                     <div
-                                        class="d-flex align-items-center ms-auto  gap-2">
-                                        <button class="btn border-0 p-0 grid-view">
+                                        class="d-flex align-items-center ms-auto">
+                                        <button class="btn border-0 grid-view active">
                                             <svg width="24" height="24"
                                                 viewBox="0 0 34 28" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -773,7 +773,7 @@
                                             </svg>
 
                                         </button>
-                                        <button class="btn border-0 p-0 list-view">
+                                        <button class="btn border-0 list-view">
                                             <svg width="24" height="24"
                                                 viewBox="0 0 34 30" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -868,8 +868,8 @@
                                         class="fs-6 fw-medium text-secondary">962
                                         Designs</div>
 
-                                        <div class="d-flex align-items-center gap-2">
-                                            <button class="btn border-0 p-0 grid-view">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn border-0 grid-view active">
                                                 <svg width="24" height="24" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
                                                     <defs></defs>
@@ -880,7 +880,7 @@
                                                 </svg>
     
                                             </button>
-                                            <button class="btn border-0 p-0 list-view">
+                                            <button class="btn border-0 list-view">
                                                 <svg width="24" height="24" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
                                                     <defs></defs>
@@ -2880,19 +2880,24 @@
 
 
 
-
 <script>
     // Function to toggle grid or list view
     function toggleView(viewType) {
       const container = document.querySelector('.shop-page-products');
+      const gridBtns = document.querySelectorAll('.grid-view');
+      const listBtns = document.querySelectorAll('.list-view');
   
       if (container) {
         if (viewType === 'grid') {
           container.classList.remove('list');
           container.classList.add('grid');
+          gridBtns.forEach(btn => btn.classList.add('active'));
+          listBtns.forEach(btn => btn.classList.remove('active'));
         } else if (viewType === 'list') {
           container.classList.remove('grid');
           container.classList.add('list');
+          listBtns.forEach(btn => btn.classList.add('active'));
+          gridBtns.forEach(btn => btn.classList.remove('active'));
         }
       }
     }
@@ -2912,7 +2917,8 @@
         toggleView('list');
       });
     });
-  </script>
+</script>
+
   
 
     </body>
