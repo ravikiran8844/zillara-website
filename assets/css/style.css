@@ -1493,3 +1493,8 @@ align-items: center; */
 .grid-view.active,.list-view.active{
   background-color: #fff !important;
 }
+
+
+header{
+  border-bottom: 1px solid #C7C7C7;
+}
